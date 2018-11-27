@@ -45,6 +45,12 @@
 
 <style scoped lang="scss">
   .mcq {
-
+    .md-content {
+      background-color: transparent;
+      .md-card {
+        text-align: left;
+        margin: 0 25%;
+      }
+    }
   }
 </style>
