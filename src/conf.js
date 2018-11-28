@@ -1,6 +1,9 @@
 export const resources = {
     host: {
-        url: 'localhost',
-        port: '8080'
+        url: 'http://localhost',
+        port: '3000'
     },
+    api: {
+        questions: 'questions'
+    }
 }
