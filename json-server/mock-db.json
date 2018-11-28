@@ -1,0 +1,15 @@
+
+[{
+    "questions": {
+        "_id": "7d27f922-da07-4ba8-9ea7-783142917b32",
+        "questionType": "mcq",
+        "questions": "A software that can be freely accessed and modified.",
+        "choices": [
+            {"_index": "A",  "choice": "Synchronous Software"},
+            {"_index": "B", "choise": "Package Software"},
+            {"_index": "C", "choise": "OSS"},
+            {"_index": "D", "choise": "Middleware"}
+        ],
+        "answer": "C"
+    }
+}]
