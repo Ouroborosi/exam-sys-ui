@@ -8,8 +8,12 @@
 </template>
 
 <script lang="js">
-  import MCQ from '@/components/MCQ.vue'
+  import { HttpService } from '@/util/http/http.service'
+  import { resources } from '@/conf'
+  import { from } from 'rxjs';
 
+  import MCQ from '@/components/MCQ.vue'
+  
   export default  {
     name: 'exam',
     components: {
@@ -17,7 +21,7 @@
     },
     props: [],
     mounted() {
-
+      this.created()
     },
     data() {
       return {
@@ -25,7 +29,13 @@
       }
     },
     methods: {
-
+      // init function
+      created() {
+        console.log(`init exam`)
+        const service = new HttpService(resources.api.questions)
+        const responseObservable = from(service.get())
+        responseObservable.subscribe(_ => console.log(_))
+      }
     },
     computed: {
 
